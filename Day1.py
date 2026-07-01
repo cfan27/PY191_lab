@@ -1,8 +1,3 @@
-print("Hello World")
-
-print("Hello Computer")
-
-print("HI")
-
+print("Attempt 5")
 
 #Second attempt at commiting code
