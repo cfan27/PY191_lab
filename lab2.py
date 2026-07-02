@@ -25,7 +25,7 @@ def draw(screen):
     #
     # ---------------- TODO ----------------
 
-    #display = "|" + text
+    display = text[:cursor] + "|" + text[cursor:]
 
     # ----------------------------------------
 
@@ -74,8 +74,8 @@ def main(screen):
         elif key == curses.KEY_LEFT:
 
             cursor -= 1
-            if cursor > 0:
-                cursor -= 1
+            if cursor < 0:
+                cursor = 0
             display = text[:cursor] + "|" + text[cursor:]
 
         # ----------------------------------------
